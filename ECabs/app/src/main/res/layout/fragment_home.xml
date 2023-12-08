@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.HomeFragment">
+
+    <!--  Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_170sdp"
+            android:background="@drawable/i_komyut_bg">
+
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_margin="@dimen/_20sdp"
+                android:background="@drawable/logo_text" />
+
+
+            <TextView
+                android:id="@+id/homeUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Hi, User!"
+                android:shadowColor="@color/black"
+                android:shadowDx="1"
+                android:shadowDy="2"
+                android:shadowRadius="1"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_minus20sdp"
+            android:background="@drawable/fragment_setting_bg"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:orientation="vertical">
+
+            <!--Top-->
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:flipInterval="5000"
+                android:autoStart="true"
+                android:padding="@dimen/_5sdp"
+                android:inAnimation="@anim/slide_in_right"
+                android:outAnimation="@anim/slide_out_left"
+                android:background="@drawable/info_container"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:src="@drawable/toda_info_1"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:src="@drawable/toda_info_2"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:src="@drawable/toda_info_3"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:src="@drawable/toda_info_4"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:src="@drawable/toda_info_4_1"
+                    />
+
+
+            </ViewFlipper>
+
+            <!--Features-->
+
+            <!--Updates-->
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_52sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_gravity="center"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+                                android:id="@+id/accountBtn"
+                                android:layout_width="@dimen/_135sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:background="@drawable/gradient_acount_container"
+                                >
+
+                                <ImageView
+                                    android:layout_width="@dimen/_75sdp"
+                                    android:layout_height="@dimen/_75sdp"
+                                    android:layout_marginBottom="@dimen/_minus15sdp"
+                                    android:layout_marginEnd="@dimen/_2sdp"
+                                    android:src="@drawable/ic_account"
+                                    android:layout_gravity="bottom|end"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:text="Account"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:layout_gravity="bottom"
+                                    android:shadowColor="@color/black"
+                                    android:shadowDx="1"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="1"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginBottom="@dimen/_10sdp"/>
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/HTKBtn"
+                                android:layout_width="@dimen/_135sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:background="@drawable/gradient_how_container"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                >
+
+                                <ImageView
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:src="@drawable/ic_how"
+                                    android:layout_marginEnd="@dimen/_10sdp"
+                                    android:layout_gravity="center|end"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:text="How to know If?"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:layout_gravity="bottom"
+                                    android:shadowColor="@color/black"
+                                    android:shadowDx="1"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="1"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginBottom="@dimen/_10sdp"/>
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/aboutUsBtn"
+                                android:layout_width="@dimen/_135sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:background="@drawable/gradient_about_container"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                >
+
+                                <ImageView
+                                    android:layout_width="@dimen/_80sdp"
+                                    android:layout_height="@dimen/_80sdp"
+                                    android:src="@drawable/ic_about"
+                                    android:layout_marginEnd="@dimen/_20sdp"
+                                    android:layout_marginBottom="@dimen/_minus15sdp"
+                                    android:layout_gravity="bottom|end"/>
+                                <TextView
+                                    android:id="@+id/etext"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:text="About Us"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:layout_gravity="bottom"
+                                    android:shadowColor="@color/black"
+                                    android:shadowDx="1"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="1"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginBottom="@dimen/_10sdp"/>
+
+                            </FrameLayout>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <FrameLayout
+
+                                android:layout_width="@dimen/_135sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:background="@drawable/gradient_weather_container"
+                                >
+
+                                <ImageView
+                                    android:layout_width="@dimen/_80sdp"
+                                    android:layout_height="@dimen/_80sdp"
+                                    android:src="@drawable/cloud"
+                                    android:layout_marginBottom="@dimen/_minus10sdp"
+                                    android:layout_marginEnd="@dimen/_10sdp"
+                                    android:layout_gravity="bottom|end"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:text="Weather"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:layout_gravity="bottom"
+                                    android:shadowColor="@color/black"
+                                    android:shadowDx="1"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="1"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginBottom="@dimen/_10sdp"/>
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white"
+                                    android:alpha="0.6"/>
+
+                                <TextView
+                                    android:layout_width="@dimen/_90sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:layout_marginStart="@dimen/_minus16sdp"
+                                    android:layout_marginTop="@dimen/_15sdp"
+                                    android:background="@color/red"
+                                    android:text="Coming Soon"
+                                    android:textSize="11sp"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/poppins_medium_italic"
+                                    android:textAlignment="center"
+                                    android:rotation="-40"/>
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="@dimen/_135sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:background="@drawable/gradient_traffic_container"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                >
+
+
+                                <ImageView
+                                    android:layout_width="@dimen/_70sdp"
+                                    android:layout_height="@dimen/_70sdp"
+                                    android:src="@drawable/traffic"
+                                    android:layout_marginBottom="@dimen/_minus10sdp"
+                                    android:layout_gravity="bottom|end"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:text="Traffic"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:layout_gravity="bottom"
+                                    android:shadowColor="@color/black"
+                                    android:shadowDx="1"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="1"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginBottom="@dimen/_10sdp"/>
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/white"
+                                    android:alpha="0.6"/>
+
+                                <TextView
+                                    android:layout_width="@dimen/_90sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:layout_marginStart="@dimen/_minus16sdp"
+                                    android:layout_marginTop="@dimen/_15sdp"
+                                    android:background="@color/red"
+                                    android:text="Coming Soon"
+                                    android:textSize="11sp"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/poppins_medium_italic"
+                                    android:textAlignment="center"
+                                    android:rotation="-40"/>
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:id="@+id/AboutAppBtn"
+                                android:layout_width="@dimen/_135sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:background="@drawable/gradient_app_container"
+                                >
+
+                                <ImageView
+                                    android:layout_width="@dimen/_75sdp"
+                                    android:layout_height="@dimen/_75sdp"
+                                    android:layout_marginBottom="@dimen/_minus15sdp"
+                                    android:layout_marginEnd="@dimen/_2sdp"
+                                    android:src="@drawable/logo_only"
+                                    android:layout_gravity="bottom|end"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:text="App"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:layout_gravity="bottom"
+                                    android:shadowColor="@color/black"
+                                    android:shadowDx="1"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="1"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:layout_marginBottom="@dimen/_10sdp"/>
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

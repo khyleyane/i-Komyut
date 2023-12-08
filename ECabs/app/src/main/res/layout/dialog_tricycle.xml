@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+   >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:id="@+id/TricycleMes"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/dialog_container"
+            android:orientation="vertical"
+            >
+
+
+
+
+                <TextView
+                    android:id="@+id/todaName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MACATODA"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/blue"
+                    android:textSize="25sp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:elevation="@dimen/_5sdp"
+                    />
+                <TextView
+                    android:id="@+id/todaLoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Savemore Terminal"
+                    android:fontFamily="@font/poppins_medium_italic"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    android:layout_centerHorizontal="true"
+                    android:elevation="@dimen/_5sdp"
+
+                    />
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="@dimen/_280sdp"
+                android:layout_height="@dimen/_280sdp"
+                android:paddingEnd="@dimen/_minus60sdp"
+                android:layout_marginTop="@dimen/_minus20sdp"
+                android:layout_marginEnd="@dimen/_minus25sdp"
+                android:src="@drawable/fragment_transit_tric_design"
+                android:layout_gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_25sdp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/triMapBtn"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/fragment_transit_button_boxs"
+                    android:text="Show in Map"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    />
+
+                <Button
+                    android:id="@+id/triCloseBtn"
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/fragment_transit_button_boxs"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="Close"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

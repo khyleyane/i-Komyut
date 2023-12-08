@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ECabs" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your light theme here. -->
+    </style>
+
+    <style name="Theme.ECabs" parent="Base.Theme.ECabs" >
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="android:navigationBarColor">@color/blue</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+</resources>

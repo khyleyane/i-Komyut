@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ContactUsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_170sdp"
+            android:layout_marginTop="@dimen/_minus1sdp"
+            android:background="@drawable/i_komyut_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+                    <ImageView
+                        android:id="@+id/eastBack"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/ic_east_arrow"
+                        android:rotation="180"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:clickable="true"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:background="@drawable/logo_text"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:clickable="true"/>
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Connect and \nget in touch with us!"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="24sp"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_30sdp"
+                    android:layout_gravity="bottom"
+                    />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_bar"
+            android:layout_marginTop="@dimen/_minus20sdp"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/fragment_setting_ic_phone"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact Number"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="18sp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123-4567-8910"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:background="@drawable/fragment_setting_ic_envelop"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email Address"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="18sp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="i.komyut@gmail.com"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        />
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/fragment_setting_ic_link"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Social Media"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="18sp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@drawable/ic_facebook"
+                            />
+
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@drawable/ic_instagram"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            />
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@drawable/ic_twitter"
+                            android:layout_marginStart="@dimen/_20sdp"
+                            />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/fragment_setting_ic_globe"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Website"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="18sp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="www.i-komyut.com"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

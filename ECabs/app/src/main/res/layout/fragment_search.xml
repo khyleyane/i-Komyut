@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/search_anim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fragment_search_bg"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_42sdp"
+        tools:ignore="MissingConstraints"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_170sdp"
+            android:background="@drawable/i_komyut_bg">
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_margin="@dimen/_20sdp"
+                android:background="@drawable/logo_text" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Where would \nyou like to go today?"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+        </FrameLayout>
+            <!--Search Components-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_bar"
+            android:layout_marginTop="@dimen/_minus20sdp"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <FrameLayout
+                    android:id="@+id/search1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+
+                    android:alpha="1"
+                    android:elevation="2px">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        >
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_18sdp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_gravity="center_vertical"
+                                android:paddingRight="@dimen/_10sdp"
+                                android:src="@drawable/ic_pin"/>
+
+                            <EditText
+                                android:id="@+id/editText1"
+                                style="@style/Widget.AppCompat.AutoCompleteTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_28sdp"
+                                android:background="@drawable/fragment_search_textfield_background"
+                                android:ems="13"
+                                android:fontFamily="@font/poppins_medium_italic"
+                                android:inputType="text"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="10dp"
+                                android:selectAllOnFocus="false"
+                                android:hint="Type your origin location..."
+                                android:textColorHint="@color/light_blue"
+                                android:textColor="@color/blue"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/locUnderline"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/fragment_transit_underline" />
+                        <TextView
+                            android:id="@+id/currentLocBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select current location as origin"
+                            android:paddingStart="@dimen/_25sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:textColor="@color/blue"
+                            android:fontFamily="@font/poppins_semi_bold_italic"
+                            android:textSize="15sp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_gravity="center_vertical"
+                                android:paddingRight="@dimen/_10sdp"
+                                android:src="@drawable/ic_pin_solid"/>
+
+                            <EditText
+                                android:id="@+id/editText2"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_28sdp"
+                                android:ems="11"
+                                android:inputType="text"
+                                android:hint="Type your destination..."
+                                android:textColorHint="@color/light_blue"
+                                android:background="@drawable/fragment_search_textfield_background"
+                                android:paddingLeft="10dp"
+                                android:fontFamily="@font/poppins_medium_italic"
+                                android:textSize="18sp"
+                                android:textColor="@color/blue"
+
+                                />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/desUnderline"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/fragment_transit_underline" />
+                        <CheckBox
+                            android:id="@+id/savedSearchCbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Save search?"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:textColor="@color/blue"
+                            android:buttonTint="@color/blue"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:visibility="gone"
+                            />
+
+                        <TextView
+                            android:id="@+id/clearText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:text="Clear"
+                            android:textColor="@color/grey"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:textSize="16sp"
+                            />
+
+
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <!--What do you prefer message componets-->
+                <FrameLayout
+                    android:id="@+id/messageSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:alpha="0"
+                    android:elevation="-1px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="What do you prefer?"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_marginStart="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:textSize="24sp"
+                        />
+
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_15sdp">
+
+                        <RadioButton
+                            android:id="@+id/radioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_30sdp"
+                            android:layout_marginTop="@dimen/_60sdp"
+                            android:buttonTint="@color/blue"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Fastest trip"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_11sdp"/>
+
+                        <TextView
+                            android:id="@+id/radioText1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_medium_italic"
+                            android:layout_marginStart="@dimen/_55sdp"
+                            android:layout_marginTop="@dimen/_minus5sdp"
+                            android:text="The system will search for the best route in
+                        terms of Time and Distance."
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_9sdp"/>
+
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_30sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:buttonTint="@color/blue"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Low-cost trip"
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_11sdp"/>
+
+                        <TextView
+                            android:id="@+id/radioText2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_minus5sdp"
+                            android:fontFamily="@font/poppins_medium_italic"
+                            android:layout_marginStart="@dimen/_55sdp"
+                            android:text="The system will search for the best route in
+                        terms of Fare."
+                            android:textColor="@color/blue"
+                            android:textSize="@dimen/_9sdp" />
+
+                    </RadioGroup>
+
+                </FrameLayout>
+
+            </FrameLayout>
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="NEXT"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/white"
+                android:background="@drawable/fragment_search_search_button"
+                android:fontFamily="@font/poppins_bold"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

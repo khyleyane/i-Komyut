@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".Activity.SplashActivity">
+
+    <ImageView
+        android:layout_width="@dimen/_315sdp"
+        android:layout_height="@dimen/_305sdp"
+        android:src="@drawable/rounded_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_80sdp"
+        />
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1in"
+        android:paddingLeft="85dp"
+        android:paddingRight="85dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/activity_splash_progress_background" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingBottom="60dp"
+        android:text="Powered by Google Maps API"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="11dp"
+        android:textColor="@color/white"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingBottom="40dp"
+        android:text="All rights reserved 2023"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="11dp"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>

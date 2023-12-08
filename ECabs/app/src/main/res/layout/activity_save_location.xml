@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SaveLocationActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_170sdp"
+            android:background="@drawable/i_komyut_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+                    <ImageView
+                        android:id="@+id/eastBack"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/ic_east_arrow"
+                        android:rotation="180"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:clickable="true"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:background="@drawable/logo_text"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:clickable="true"/>
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saved Locations"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="24sp"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_30sdp"
+                    android:layout_gravity="bottom"
+                    />
+            </FrameLayout>
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_bar"
+            android:paddingTop="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_minus20sdp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/savedLocationList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                />
+
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

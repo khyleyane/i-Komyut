@@ -1,0 +1,19 @@
+    <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/light" /> <!-- Replace with your desired gray color -->
+            <corners android:radius="10dp" /> <!-- Adjust the radius value as needed -->
+        </shape>
+    </item>
+
+    <!-- Progress -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <solid android:color="@color/white" /> <!-- Replace with your desired light blue color -->
+                <corners android:radius="10dp" /> <!-- Adjust the radius value to match the background -->
+            </shape>
+        </clip>
+    </item>
+</layer-list>

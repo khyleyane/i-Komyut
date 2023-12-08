@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/bottom_navigation_ic_home"
+        android:iconTint="@color/white"
+        android:title="Home"
+        />
+
+    <item
+        android:id="@+id/map"
+        android:icon="@drawable/bottom_navigation_ic_map"
+        android:iconTint="@color/white"
+        android:title="Maps" />
+    <item
+        android:id="@+id/transit"
+        android:icon="@drawable/bottom_navigation_ic_transit"
+        android:iconTint="@color/white"
+        android:title="Transit" />
+
+</menu>

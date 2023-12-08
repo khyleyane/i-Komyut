@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AboutAppActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_170sdp"
+            android:layout_marginTop="@dimen/_minus1sdp"
+            android:background="@drawable/i_komyut_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+                    <ImageView
+                        android:id="@+id/eastBack"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/ic_east_arrow"
+                        android:rotation="180"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:clickable="true"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:background="@drawable/logo_text"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:clickable="true"/>
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About the App"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="24sp"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_30sdp"
+                    android:layout_gravity="bottom"
+                    />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_bar"
+            android:layout_marginTop="@dimen/_minus20sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="i-Komyut is a Smart Transit System application designed to help commuters navigate their way around the City of Cabuyao smoothly. It is developed by a group of researchers taking a program of Bachelor of Science in Computer Science as part of their Thesis Project."
+                android:textColor="@color/blue"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="16sp"
+                android:layout_marginTop="@dimen/_20sdp"
+                />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <!--1-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1.Purpose"
+                       android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:textSize="16sp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="i-Komyut aims to provide its users in commuting in the City of Cabuyao, Laguna. By using the application, the users will be able to navigate the best route in terms of Time and Distance and the best route in terms of Fare to their destination."
+                        android:textColor="@color/light_blue"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="16sp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        />
+                    <!--2-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2.Constraints"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:textSize="16sp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Since the mobile application is dedicated for commuters in the city of Cabuyao, Laguna, other neighboring cities like Calamba City, Sta. Rosa City, and City of Biñan will not be part of the mobile application. Moreover, the mobile application is also Android-based which means it is not suitable for other mobile devices’ OS."
+                        android:textColor="@color/light_blue"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="16sp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        />
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

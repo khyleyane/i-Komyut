@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_logo_i"
+        android:label="i-Komyut"
+        android:roundIcon="@drawable/rounded_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ECabs"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SaveLocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.HowtoknowIfActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AboutAppActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AboutUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.PrivacyPolicyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Terms_ConditionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ContactUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.FAQsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.RateUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SuggestionFeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User_Authentication_Registration.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User_Authentication_Registration.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Once_Signup"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Once_Login"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:exported="true"
+            tools:ignore="DuplicateActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.MainActivity"
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
+    </application>
+
+</manifest>

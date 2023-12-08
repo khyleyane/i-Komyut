@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.RateUsActivity">
+
+    <!--First Page-->
+    <LinearLayout
+        android:id="@+id/firstPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="1"
+        android:elevation="1px"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/close"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/_15sdp"
+            android:clickable="true"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:text="    Your opinion \nmatters with us!"
+                android:layout_gravity="center_horizontal"
+                android:textSize="32sp"
+                android:fontFamily="@font/poppins_extra_bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:text="We work hard to serve you best and would \nlove to know how would you rate our app?"
+                android:layout_gravity="center_horizontal"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_semi_bold"/>
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_300sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/rateus_design"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/rate1"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/ic_star_white"/>
+                <ImageView
+                    android:id="@+id/rate2"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:src="@drawable/ic_star_white"/>
+                <ImageView
+                    android:id="@+id/rate3"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:src="@drawable/ic_star_white"/>
+                <ImageView
+                    android:id="@+id/rate4"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:src="@drawable/ic_star_white"/>
+                <ImageView
+                    android:id="@+id/rate5"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:src="@drawable/ic_star_white"/>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical">
+                    <Button
+                        android:id="@+id/submitBtn"
+                        android:layout_width="@dimen/_230sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:background="@drawable/fragment_search_search_button"
+                        android:text="SUBMIT"
+                        android:padding="@dimen/_5sdp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_gravity="bottom|center_horizontal"
+                        />
+                    <TextView
+                        android:id="@+id/skip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Skip for now"
+                        android:textColor="@color/grey"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_50sdp"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

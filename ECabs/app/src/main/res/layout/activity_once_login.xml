@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Once_Login">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:elevation="1px">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/close"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/_15sdp"
+            />
+
+
+        <!--Once Login Form-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+            <!--1-->
+            <LinearLayout
+                android:id="@+id/Page_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:alpha="1"
+                android:elevation="2px"
+             >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome back, "
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/poppins_extra_bold"
+                    android:textSize="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:id="@+id/onceLoginName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_extra_bold"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_25sdp"
+                    android:layout_gravity="center"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp">
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="@dimen/_300sdp"
+                        android:layout_height="@dimen/_300sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/once_login_design1" />
+                </FrameLayout>
+
+            </LinearLayout>
+            <!--2-->
+            <LinearLayout
+                android:id="@+id/Page_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:alpha="0"
+                android:elevation="-1px">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="      Pin Location \nfor your next  trip!"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/poppins_extra_bold"
+                    android:textSize="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:layout_gravity="center"
+                    />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp">
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="@dimen/_300sdp"
+                        android:layout_height="@dimen/_300sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/once_login_design2" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <!--3-->
+            <LinearLayout
+                android:id="@+id/Page_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:alpha="0"
+                android:elevation="-1px">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check the Transit \n       route plans!"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/poppins_extra_bold"
+                    android:textSize="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:layout_gravity="center"
+                    />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp">
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="@dimen/_300sdp"
+                        android:layout_height="@dimen/_300sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/once_login_design3" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <!--4-->
+            <LinearLayout
+                android:id="@+id/Page_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:alpha="0"
+                android:elevation="-1px">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   Update your \nacount details!"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/poppins_extra_bold"
+                    android:textSize="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:layout_gravity="center"
+                    />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp">
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="@dimen/_300sdp"
+                        android:layout_height="@dimen/_300sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/once_login_design4" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <!--5-->
+            <LinearLayout
+                android:id="@+id/Page_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:alpha="0"
+                android:elevation="-1px">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="E-Cabs prioritize \nits user experience."
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:textColor="@color/blue"
+                    android:fontFamily="@font/poppins_extra_bold"
+                    android:textSize="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_extra_bold"
+                    android:text="Let us know your comments \n               and suggestions!"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_gravity="center"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp">
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="@dimen/_300sdp"
+                        android:layout_height="@dimen/_300sdp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/once_login_design5" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal|bottom">
+
+            <Button
+                android:id="@+id/Button"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/fragment_search_search_button"
+                android:text="GET STARTED"
+                android:padding="@dimen/_5sdp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_gravity="bottom"
+                />
+
+            <TextView
+                android:id="@+id/skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skip for now"
+                android:textColor="@color/grey"
+                android:layout_gravity="center_horizontal"
+                android:textSize="13sp"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_60sdp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="@dimen/_20sdp">
+
+            <ImageView
+                android:id="@+id/scroll1"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:src="@drawable/once_scroll_dark"/>
+
+            <ImageView
+                android:id="@+id/scroll2"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:src="@drawable/once_scroll_light"
+                android:layout_marginStart="@dimen/_10sdp"/>
+
+            <ImageView
+                android:id="@+id/scroll3"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:src="@drawable/once_scroll_light"
+                android:layout_marginStart="@dimen/_10sdp"/>
+
+            <ImageView
+                android:id="@+id/scroll4"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:src="@drawable/once_scroll_light"
+                android:layout_marginStart="@dimen/_10sdp"/>
+
+            <ImageView
+                android:id="@+id/scroll5"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="@dimen/_10sdp"
+                android:src="@drawable/once_scroll_light"
+                android:layout_marginStart="@dimen/_10sdp"/>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

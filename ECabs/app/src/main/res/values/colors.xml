@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name ="light_gray">#EFF4F9</color>
+    <color name ="light_grey">#F3F3F3</color>
+    <color name="light_blue">#8EB4DF</color>
+    <color name="light">#9F8EB4DF</color>
+    <color name="grey">#858585</color>
+    <color name="red">#DC3545</color>
+    <color name="blue">#136BE3</color>
+    <color name="skyblue">#26136BE3</color>
+    <color name="darkblue">#1D55A2</color>
+    <color name="macatoda">#592e90</color>
+    <color name="hvtoda">#640723</color>
+    <color name="lnstoda">#9dd089</color>
+    <color name="macopastr">#f58220</color>
+    <color name="sicalatoda">#073b3a</color>
+    <color name="sjbtoda">#b9529f</color>
+    <color name="btatoda">#3953a4</color>
+    <color name="botoda">#d1c0a8</color>
+    <color name="bmbgtoda">#252466</color>
+    <color name="bbtoda">#81c9ef</color>
+    <color name="sjv7toda">#cd3a7b</color>
+    <color name="pudtoda">#ababab</color>
+    <color name="dovtoda">#ef5da2</color>
+    <color name="mcchtoda">#fed700</color>
+    <color name="csvtoda">#a3d393</color>
+    <color name="ospotoda">#f7ec13</color>
+    <color name="cmsatoda">#07a04a</color>
+    <color name="katoda">#80481e</color>
+    <color name="swipe">#EDEDED</color>
+
+
+</resources>

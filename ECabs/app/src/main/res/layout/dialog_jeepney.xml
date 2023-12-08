@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+        android:id="@+id/jeepneyMes"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/dialog_container"
+        android:orientation="vertical"
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jeepney"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/blue"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_30sdp"
+            />
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_250sdp"
+            android:paddingStart="@dimen/_minus60sdp"
+            android:src="@drawable/fragment_transit_jeep_design"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/_minus10sdp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="@dimen/_25sdp"
+
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/jeepMapBtn"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/fragment_transit_button_boxs"
+                android:text="Show in Map"
+                android:fontFamily="@font/poppins_medium"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                />
+
+            <Button
+                android:id="@+id/jeepCloseBtn"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/fragment_transit_button_boxs"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:textAllCaps="false"
+                android:text="Close"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

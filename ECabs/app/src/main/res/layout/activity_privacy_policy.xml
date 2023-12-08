@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PrivacyPolicyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_170sdp"
+            android:background="@drawable/i_komyut_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+                    <ImageView
+                        android:id="@+id/eastBack"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/ic_east_arrow"
+                        android:rotation="180"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:clickable="true"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:background="@drawable/logo_text"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:clickable="true"/>
+                </FrameLayout>
+
+
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="24sp"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_30sdp"
+                    android:layout_gravity="bottom"
+                    />
+            </FrameLayout>
+
+
+        </LinearLayout>
+        <!--First Page-->
+        <LinearLayout
+            android:id="@+id/firstPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_minus20sdp"
+            android:orientation="vertical"
+            android:alpha="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:text="i-Komyut collects and processes personal information as outlined in our Privacy Policy. By using the app, you consent to the collection and processing of your data as described in the Privacy Policy."
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textSize="16sp"
+                android:padding="@dimen/_20sdp"
+                android:background="@drawable/profile_bar"
+                android:elevation="@dimen/_3sdp"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:text="1. Information We Collect"
+                        android:textSize="16sp"
+                        android:paddingStart="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_blue"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="1.1. Personal Information: When you register and create an account on i-Komyut, we may collect personal information such as your name, email address, and contact details. Providing this information is voluntary, but it may be necessary to access certain features of the app."
+                        android:textSize="16sp"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_blue"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="1.2. User Location: With your explicit permission, i-Komyut may collect your precise location data to provide real-time transit information and navigation services."
+                        android:textSize="16sp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_blue"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="1.3. Destinations: i-Komyut may collect information about your selected destinations and frequently used routes to improve your commuting experience and offer personalized recommendations."
+                        android:textSize="16sp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:text="2. Data Security"
+                        android:textSize="16sp"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_blue"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="2.1. We employ industry-standard security measures to protect your personal information from unauthorized access, disclosure, or alteration."
+                        android:textSize="16sp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_15sdp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:text="3. User Control"
+                        android:textSize="16sp"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_blue"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="16sp"
+                        android:text="3.1. Location Settings: You can enable or disable location tracking through your device settings or the app's location permissions."
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_blue"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="3.2. Account Management: You have the right to access, update, and delete your account information at any time."
+                        android:textSize="16sp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:text="4. Changes to Privacy Policy"
+                        android:textSize="16sp"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_blue"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="4.1. We may update this Privacy Policy from time to time to reflect changes in our practices or for legal reasons. The updated Privacy Policy will be posted on our website, and your continued use of i-Komyut will indicate your acceptance of the changes."
+                        android:textSize="16sp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_15sdp"/>
+
+                    <Button
+                        android:id="@+id/agreeBtn"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:background="@drawable/fragment_search_search_button"
+                        android:text="Ok"
+                        android:padding="@dimen/_5sdp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_50sdp"
+                        />
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

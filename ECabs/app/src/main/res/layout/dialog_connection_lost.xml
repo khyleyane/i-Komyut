@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fare_container"
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connection Lost!"
+            android:textColor="@color/blue"
+            android:textSize="35sp"
+            android:fontFamily="@font/poppins_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/_30sdp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="It seems like you have lost connection with WiFi or other Internet Connection."
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textAlignment="center"
+           />
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_250sdp"
+            android:src="@drawable/lost_connection"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <Button
+                android:id="@+id/eastBackBtn"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:text="Continue"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textSize="13sp"
+                android:layout_gravity="center"
+                android:background="@drawable/fragment_transit_button_boxs"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_10sdp"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

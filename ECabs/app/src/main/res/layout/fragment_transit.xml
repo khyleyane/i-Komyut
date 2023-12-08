@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Fragments.TransitFragment">
+
+
+
+<FrameLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+
+<!--    Start of top-->
+<FrameLayout
+android:layout_width="match_parent"
+android:layout_height="@dimen/_170sdp"
+android:background="@drawable/i_komyut_bg">
+
+<ImageView
+    android:layout_width="@dimen/_80sdp"
+    android:layout_height="@dimen/_15sdp"
+    android:layout_margin="@dimen/_20sdp"
+    android:background="@drawable/logo_text" />
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:layout_marginStart="@dimen/_20sdp"
+    android:layout_marginBottom="@dimen/_30sdp"
+    android:fontFamily="@font/poppins_bold"
+    android:text="Explore the \nModes of Transit!"
+    android:textColor="@color/white"
+    android:textSize="28sp" />
+
+</FrameLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_marginTop="@dimen/_150sdp"
+android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_100sdp"
+    android:background="@drawable/fragment_setting_bg"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Modes Of Transportation"
+        android:textColor="@color/blue"
+        android:textSize="18sp" />
+
+    <!--jeep and tric button-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            >
+
+                <TextView
+                    android:id="@+id/jeepney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Jeepney"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/jeepUnderline"
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="@dimen/_5sdp"
+                android:alpha="1"
+                android:background="@drawable/fragment_transit_bottom_box" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tricycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="Tricycle"
+                android:textAllCaps="false"
+                android:textColor="@color/blue"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tricUnderline"
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:alpha="0"
+                android:background="@drawable/fragment_transit_bottom_box" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--Underline -->
+
+</LinearLayout>
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!--JeepneyList-->
+    <LinearLayout
+        android:id="@+id/jeepneyList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:alpha="1"
+        android:elevation="2px"
+        android:layout_marginBottom="@dimen/_70sdp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@color/blue">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Jeepney Route"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/jeep_route"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_30sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/transit_container"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:elevation="2dp"
+                >
+                <ImageView
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/box_color_jeep" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Cabuyao Highway"
+                    android:textColor="@color/blue"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <!--Tricycle list of toda-->
+    <LinearLayout
+        android:id="@+id/tricList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:alpha="0"
+        android:elevation="-1px"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@color/blue">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_bold"
+                android:text="TODA Terminals in the City of Cabuyao"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <!--POSATODA-->
+                <LinearLayout
+                    android:id="@+id/posatoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:background="@drawable/transit_container"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/box_color_red" />
+
+                    <TextView
+                        android:id="@+id/pos1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:text="POSATODA | "
+                        android:textColor="@color/blue"
+                        android:textSize="13sp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text=" Poblacion and Sala"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--BBTODA-->
+                <LinearLayout
+                    android:id="@+id/bbtoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/transit_container"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/box_color_light_blue" />
+
+                    <TextView
+                        android:id="@+id/bb1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:text="BBTODA | "
+                        android:textColor="@color/blue"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text=" Bigaa and Butong"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp"
+
+                        />
+                </LinearLayout>
+
+                <!--BTATODA-->
+                <LinearLayout
+                    android:id="@+id/btatoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/transit_container"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/box_color_dark_blue" />
+
+                    <TextView
+                        android:id="@+id/bt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="BTATODA | "
+                        android:textColor="@color/blue"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text=" Burgos"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--OSPOTODA-->
+                <LinearLayout
+                    android:id="@+id/ospotoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/transit_container"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/box_color_light_yellow" />
+
+                    <TextView
+                        android:id="@+id/ospo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="OSPOTODA |"
+                        android:textColor="@color/blue"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/ospo1"
+                        android:layout_alignEnd="@+id/ospo1"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text=" Ospital ng Cabuyao"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--CMSATODA-->
+                <LinearLayout
+                    android:id="@+id/cmsatoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/transit_container"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/box_color_green" />
+
+                    <TextView
+                        android:id="@+id/cms1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="CMSATODA | "
+                        android:textColor="@color/blue"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text=" Cabuyao Market Site"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--MACATODA-->
+                <LinearLayout
+                    android:id="@+id/macatoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/transit_container"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/box_color_violet" />
+
+                    <TextView
+                        android:id="@+id/mac11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="MACATODA |"
+                        android:textColor="@color/blue"
+                        android:textSize="13sp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text=" Marinig"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--BMBGTODA-->
+                <LinearLayout
+                    android:id="@+id/bmbgtoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/transit_container"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/box_color_royal_blue" />
+
+                    <TextView
+                        android:id="@+id/bmb1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="BMBGTODA | "
+                        android:textColor="@color/blue"
+                        android:textSize="13sp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text="Baclaran, Mamatid, Banlic, Gulod"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp"
+
+                        />
+
+                </LinearLayout>
+
+                <!--CSVTODA-->
+                <LinearLayout
+                    android:id="@+id/csvtoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/transit_container"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/box_color_yellow_green" />
+
+                    <TextView
+                        android:id="@+id/csv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="CSVTODA |"
+                        android:textColor="@color/blue"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text=" Cabuyao and Southville"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp"
+
+                        />
+                </LinearLayout>
+
+                <!--SJV7GTODA-->
+                <LinearLayout
+                    android:id="@+id/sjv7gtoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/transit_container"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/box_color_light_violet" />
+
+                    <TextView
+                        android:id="@+id/sjv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="SJV7GTODA |"
+                        android:textColor="@color/blue"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text=" St. Joseph Gulod"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--SJBTODA-->
+                <LinearLayout
+                    android:id="@+id/sjbtoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/transit_container"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/box_color_purple" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="SJBTODA |"
+                        android:textColor="@color/blue"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text=" St. Joseph Butong"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--SICALATODA-->
+                <LinearLayout
+                    android:id="@+id/sicalatoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/transit_container"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/box_color_dark_green" />
+
+                    <TextView
+                        android:id="@+id/sic1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="SICALATODA |"
+                        android:textColor="@color/blue"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text=" San Isidro"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--PUDTODA-->
+                <LinearLayout
+                    android:id="@+id/pudtoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/transit_container"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/box_color_grey" />
+
+                    <TextView
+                        android:id="@+id/pud1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="PUDTODA |"
+                        android:textColor="@color/blue"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text=" Pulo Diezmo"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--HVTODA-->
+                <LinearLayout
+                    android:id="@+id/hvtoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/transit_container"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/box_color_maroon" />
+
+                    <TextView
+                        android:id="@+id/hvt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="HVTODA |"
+                        android:textColor="@color/blue"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text=" Hongkong Village"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--DOVTODA-->
+                <LinearLayout
+                    android:id="@+id/dovtoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/transit_container"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/box_color_pink" />
+
+                    <TextView
+                        android:id="@+id/dov1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="DOVTODA |"
+                        android:textColor="@color/blue"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text=" Don Onofre"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--KATODA-->
+                <LinearLayout
+                    android:id="@+id/katoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/transit_container"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/box_color_brown" />
+
+                    <TextView
+                        android:id="@+id/kat1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="KATODA |"
+                        android:textColor="@color/blue"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text=" Katapatan"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--MCCHTODA-->
+                <LinearLayout
+                    android:id="@+id/mcchtoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/transit_container"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/box_color_mustard_yellow" />
+
+                    <TextView
+                        android:id="@+id/mcc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="MCCHTODA |"
+                        android:textColor="@color/blue"
+                        android:textSize="13sp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text=" Mabuhay City"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--BOTODA-->
+                <LinearLayout
+                    android:id="@+id/botoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/transit_container"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/box_color_beige" />
+
+                    <TextView
+                        android:id="@+id/bot1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="BOTODA |"
+                        android:textColor="@color/blue"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text=" Bamboo Orchard"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--MACOPASTAR-->
+                <LinearLayout
+                    android:id="@+id/macopastar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/transit_container"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/box_color_orange" />
+
+                    <TextView
+                        android:id="@+id/mac1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="MACOPASTAR | "
+                        android:textColor="@color/blue"
+                        android:textSize="13sp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/mac2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text=" Mariquita, Console, Anahaw, Sta. Rosa"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp"
+
+                        />
+
+                </LinearLayout>
+
+                <!--LNSTODA-->
+                <LinearLayout
+                    android:id="@+id/lnstoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_60sdp"
+                    android:background="@drawable/transit_container"
+                    android:elevation="2dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/box_color_mint_green" />
+
+                    <TextView
+                        android:id="@+id/lns1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="LNSTODA |"
+                        android:textColor="@color/blue"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium_italic"
+                        android:text=" LakesideNest"
+                        android:textColor="@color/blue"
+                        android:textSize="12sp"
+
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>
+</LinearLayout>
+</FrameLayout>
+
+
+</RelativeLayout>

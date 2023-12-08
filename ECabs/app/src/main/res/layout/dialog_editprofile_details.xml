@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/close_white"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/_15sdp"
+            android:elevation="@dimen/_10sdp"
+            android:clickable="true"
+            />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:elevation="3dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_edit_profile"
+                android:layout_marginBottom="@dimen/_minus50sdp"
+                />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fare_container"
+            android:padding="@dimen/_20sdp"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:layout_marginTop="@dimen/_35sdp"
+            />
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:background="@drawable/fragment_setting_textbox"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:src="@drawable/fragment_transit_underline" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <EditText
+            android:id="@+id/editAge"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:textColor="@color/grey"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_medium"
+            android:background="@drawable/fragment_setting_textbox"
+            android:inputType="number"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:src="@drawable/fragment_transit_underline" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact No."
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+
+        <EditText
+            android:id="@+id/editNo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:textColor="@color/grey"
+            android:textSize="16sp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:background="@drawable/fragment_setting_textbox"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:inputType="number"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:src="@drawable/fragment_transit_underline" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+
+        <EditText
+            android:id="@+id/editAddress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:textColor="@color/grey"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:fontFamily="@font/poppins_medium"
+            android:background="@drawable/fragment_setting_textbox"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:src="@drawable/fragment_transit_underline" />
+            <LinearLayout
+                android:id="@+id/passwordContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+
+
+                <EditText
+                    android:id="@+id/passwordAuth"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:textColor="@color/grey"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:textSize="16sp"
+                    android:hint="Enter Password"
+                    android:textColorHint="@color/grey"
+                    android:inputType="textPassword"
+                    android:fontFamily="@font/poppins_medium"
+                    android:background="@drawable/fragment_setting_textbox"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:src="@drawable/fragment_transit_underline" />
+            </LinearLayout>
+
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/button_5radius"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            />
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/button_5radius"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_10sdp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    </FrameLayout>
+</RelativeLayout>

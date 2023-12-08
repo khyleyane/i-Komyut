@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.SettingFragment">
+
+
+<!--    Setting Form-->
+    <LinearLayout
+        android:id="@+id/settingForm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_70sdp"
+        android:orientation="vertical"
+        android:elevation="2px"
+        android:alpha="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_170sdp"
+            android:background="@drawable/i_komyut_bg"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:background="@drawable/logo_text"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Account"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="18sp"
+               />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log in to save your routes and details."
+                android:layout_marginTop="@dimen/_minus5sdp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="14sp"
+                />
+            <Button
+                android:id="@+id/loginButton1"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/fragment_setting_button"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Log In"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/blue"
+                android:textSize="18sp"
+                />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_20sdp">
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Don't have an account? "
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="14sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/signupRedirectText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sign Up"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--start-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profile_bar"
+            android:layout_marginTop="@dimen/_minus20sdp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Help"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="18sp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:textColor="@color/blue"/>
+
+            <LinearLayout
+                android:layout_width="@dimen/_250sdp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/fragment_setting_container"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/faqsBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_faqs"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_20sdp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FAQ"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:textSize="16sp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:textColor="@color/blue"/>
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:src="@drawable/fragment_transit_underline" />
+
+                <LinearLayout
+                    android:id="@+id/contactUsBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_contact_us"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_20sdp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact Us"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:textSize="16sp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:textColor="@color/blue"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suggestion and Feedbacks"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="18sp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textColor="@color/blue"/>
+
+            <LinearLayout
+                android:layout_width="@dimen/_250sdp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/fragment_setting_container"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/emailBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_email"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_20sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Suggestion and Feedbacks"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:textSize="16sp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:textColor="@color/blue"/>
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:src="@drawable/fragment_transit_underline" />
+
+                <LinearLayout
+                    android:id="@+id/rateBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_rate"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_20sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rate Us"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:textSize="16sp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:textColor="@color/blue"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms of Service"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="18sp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textColor="@color/blue"/>
+
+            <LinearLayout
+                android:layout_width="@dimen/_250sdp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/fragment_setting_container"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/TermConBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_privacy"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_20sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terms and Condition"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:textSize="16sp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:textColor="@color/blue"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:src="@drawable/fragment_transit_underline" />
+
+                <LinearLayout
+                    android:id="@+id/PPBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_terms"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_20sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Privacy Policy"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:textSize="16sp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:textColor="@color/blue"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

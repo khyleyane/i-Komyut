@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">ECabs</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Ans1">i-Komyut is a Smart Transit System designed to help commuters residing in the city of Cabuyao, Laguna, commute efficiently.</string>
+    <string name="Ans2">The location may not be scope of the system. (padagdag)</string>
+    <string name="Ans3">Franchised tricycle have a franchised sticker displayed on their windshield. To know further, please click here.</string>
+    <string name="Ans4">The TODA route plans can be viewed at the Transit Tab.</string>
+    <string name="Ans5">i-Komyut is only exclusive to areas in the City of Cabuyao.</string>
+    <string name="Ans6">i-Komyut is an android-based smart transit system which means it is not compatible with other operating system such as Apple OS, (padagdag).</string>
+
+    <string name="howtoknow1"> Commuters who are student, senior citizen, and Persons With Disabilities (PWDs) are granted 20% fare discount. This is mandated under Republic Act 9442 (for PWDs), Republic Act 9994 (for Senior Citizens), and Republic Act 11314 (for Students). \nTransport drivers who fail to grant  20% fare discount will be liable to penalty and may have their franchise canceled after repeated offenses.</string>
+    <string name="howtoknow2">To know if a tricycle is not a colorum and is franchised in the TODA, the following measures must be observed:</string>
+    <string name="howtoknow3">4.1. i-Komyut may allow users to submit content, such as reviews, ratings, comments, and suggestions. By submitting user content, you grant i-Komyut a non-exclusive, worldwide, royalty-free, transferable license to use, display, and distribute the content for the purposes of improving and promoting the app. \n \n4.2. You agree not to submit any user content that is defamatory, harmful, obscene, or violates the rights of others.</string>
+
+    <string name="terms1">2.1. To use i-Komyut, you may be required to register and create an account. You must provide accurate and up-to-date information during the registration process.\n\n2.2. You are solely responsible for maintaining the confidentiality of your account credentials and any activities that occur under your account.\n\n2.3. You must not share your account information or allow others to access your account.</string>
+
+
+    <string-array name="LocationList">
+        <item >Pamantasan ng Cabuyao</item>
+        <item>Celestine Homes Subdivision Marinig Cabuyao</item>
+        <item>Phase 3 Mabuhay City Cabuyao</item>
+        <item>Phase 2, Mabuhay City Cabuyao</item>
+        <item>Phase 6 Mabuhay City Cabuyao</item>
+        <item>Phase 4 Mabuhay City Cabuyao</item>
+        <item>Cabuyao City Hall</item>
+        <item>Cabuyao Town Plaza</item>
+        <item>Cabuyao City Hospital</item>
+        <item>Cabuyao Institute of Technology</item>
+        <item>Cabuyao Fish Port</item>
+        <item>El Sol Plaza Cabuyao City</item>
+        <item>Reysal Cabuyao Laguna</item>
+        <item>Jollibee Mamatid</item>
+        <item>St. Polycarp Parish Church</item>
+        <item>Marinig Barangay Hall</item>
+        <item>Barangay 1 Community Hall</item>
+        <item>Barangay 2 Community Hall</item>
+        <item>Cafe Malvar</item>
+        <item>New Dona Juana Garden Resort</item>
+        <item>Don Onofre Subdivision</item>
+        <item>7-Eleven St.Joseph 7</item>
+        <item>Katagumpay Helmet Store</item>
+        <item>Alfamart St. Joseph Marinig Cabuyao</item>
+        <item>Queen Aurora Garden Resort</item>
+        <item>Samgyupsalawa</item>
+        <item>Alfa Mart Marinig</item>
+        <item>TEAM JAYPEE WORX</item>
+        <item>Andok’s Marinig</item>
+        <item>AlfaMart Lakeside Nest Cabuyao</item>
+        <item>Explosive Burger-Katapatan Cabuyao</item>
+        <item>CABS Multi Sports Hall</item>
+        <item>CABS Gymnasium 1</item>
+        <item>CABS Olympic Swimming Pool</item>
+        <item>CABS Badminton Court</item>
+        <item>CABS Cabuyao Athletes Basic School</item>
+        <item>Bamboo Orchard Subdivision</item>
+        <item>DepEd City Schools Division of Cabuyao</item>
+        <item>Yuna Fuel</item> <item>Lazada Cabuyao</item>
+        <item>Gatchalian Subdivision Cabuyao Laguna</item>
+        <item>Mapua Malayan Colleges Laguna</item>
+        <item>Lazada eLogistics Philippines</item>
+        <item>Jollibee Mamatid</item>
+        <item>Jollibee Pulo</item>
+        <item>Puregold Extra Mamatid</item>
+        <item>Puregold Banlic</item>
+        <item>Puregold San Isidro</item>
+        <item>7-Eleven (0567) San Isidro</item>
+        <item>7-Eleven Cabuyao</item>
+        <item>7-Eleven Mabuhay City</item>
+        <item>7-Eleven CABUYAO CITY HALL</item>
+        <item>7-Eleven 2262 St Francis of Assisi</item>
+        <item>Centro Mall Cabuyao</item>
+        <item>WalterMart Cabuyao</item>
+        <item>DiviMall Pulo</item>
+        <item>CBCC</item>
+        <item>Promenade Mahogany Village</item>
+        <item>St. Francis of Assisi Parish Church</item>
+        <item>Pulo Barangay Hall</item>
+        <item>Banay Banay Barangay Hall</item>
+        <item>Agustinian School of Cabuyao</item>
+        <item>Sala Gymnasium</item>
+        <item>DIY Hardware-Cabuyao</item>
+        <item>Cabuyao Fire Station</item>
+        <item>Cabuyao Post Office</item>
+        <item>Kampanang Ginto</item>
+        <item>7-Eleven Sala</item>
+        <item>7-Eleven Nestle Cabuyao</item>
+        <item>Niugan Barangay Hall</item>
+        <item>St. Francis Homes 6</item>
+        <item>Lamart Shopping Center (formerly Ataw)</item>
+        <item>Holy Rosary of Cabuyao Hospital</item>
+        <item>Maranatha Christian Academy of Cabuyao Inc</item>
+        <item>Iglesia Ni Cristo-Lokal ng Niugan</item>
+        <item>J T Express Cabuyao Branch (Warehouse)</item>
+        <item>RCBC BRANCH CABUYAO-J.P. RIZAL AVENUE</item>
+        <item>Asia Novo Boutique Hotel-Cabuyao</item>
+        <item>Alfamart-Butong</item>
+        <item>Villa Nida Resort</item>
+        <item>St. Joseph Village 6</item>
+        <item>BARQUEROS RESORT</item> <item>Bigaa Elementary School</item> <item>Southville 1 Elementary School</item> <item>Amaia Scapes Cabuyao</item> <item>Cabuyao Central School</item> <item>Ospital ng Cabuyao</item> <item>Cabuyao Integrated National High School</item> <item>Iglesia Ni Cristo-Lokal ng Cabuyao</item> <item>Angel In Heaven School</item> <item>Lady of Rose Academy, Inc</item> <item>Shell - Cabuyao</item> <item>Samgyup199 Sala Cabuyao</item> <item>Total (Cabuyao)</item> <item>Sala Bridge</item> <item>7/11 1019-Banay-Banay Katapatan</item> <item>Banay-Banay Elementary School</item> <item>RFM CORPORATION - CABUYAO PLANT</item> <item>Birmingham Village</item> <item>San Isidro Barangay Hall</item> <item>San Isidro Elementary School</item> <item>San Isidro Heights</item> <item>Gran Seville Village</item> <item>Global Medical Center of Laguna</item>
+    </string-array>
+</resources>

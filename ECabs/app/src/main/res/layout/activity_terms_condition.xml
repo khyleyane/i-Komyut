@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Terms_ConditionActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_170sdp"
+            android:background="@drawable/i_komyut_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp">
+                    <ImageView
+                        android:id="@+id/eastBack"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/ic_east_arrow"
+                        android:rotation="180"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:clickable="true"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:background="@drawable/logo_text"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:clickable="true"/>
+                </FrameLayout>
+
+
+            </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terms and Condition"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="24sp"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_30sdp"
+                    android:layout_gravity="bottom"
+                    />
+            </FrameLayout>
+
+
+        </LinearLayout>
+        <!--First Page-->
+        <LinearLayout
+            android:id="@+id/firstPage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_bar"
+            android:layout_marginTop="@dimen/_minus20sdp"
+            android:orientation="vertical"
+            android:alpha="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:text="Please carefully read and comprehend the following Terms and Conditions before using i-Komyut. You accept to be legally bound by these terms by using our app. Please do not use i-Komyut if you disagree with any of these terms."
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:paddingTop="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:background="@drawable/profile_bar"
+                android:elevation="@dimen/_3sdp"
+                />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+               >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:text="1. Acceptance of Terms"
+                        android:textSize="16sp"
+                        android:paddingStart="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_blue"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="By downloading, installing, or using i-Komyut, you agree to these Terms and Conditions, as well as our Privacy Policy. If you are using i-Komyut on behalf of an organization, you represent that you have the necessary authority to bind the organization to these terms."
+                        android:textSize="16sp"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:text="2. Registration and Account"
+                        android:textSize="16sp"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_blue"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="16sp"
+                        android:text="@string/terms1"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:text="3. App Usage"
+                        android:textSize="16sp"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_blue"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="16sp"
+                        android:text="3.1. i-Komyut is intended solely for the purpose of providing efficient commuting information and navigation. You must not use the app for any illegal or unauthorized purpose."
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_blue"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="3.2. You agree not to disrupt or interfere with the functionality of i-Komyut or its servers, networks, or infrastructure."
+                        android:textSize="16sp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:text="4. User Content"
+                        android:textSize="16sp"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_blue"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="4.1. i-Komyut may allow users to submit content, such as reviews, ratings, comments, and suggestions. By submitting user content, you grant i-Komyut a non-exclusive, worldwide, royalty-free, transferable license to use, display, and distribute the content for the purposes of improving and promoting the app."
+                        android:textSize="16sp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_blue"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="4.2. You agree not to submit any user content that is defamatory, harmful, obscene, or violates the rights of others."
+                        android:textSize="16sp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_30sdp"
+                        android:paddingEnd="@dimen/_15sdp"/>
+
+                    <Button
+                        android:id="@+id/agreeBtn"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:background="@drawable/fragment_search_search_button"
+                        android:text="OK"
+                        android:padding="@dimen/_5sdp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_50sdp"
+                        />
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

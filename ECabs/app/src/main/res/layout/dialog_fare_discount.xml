@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_10sdp"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fare_container"
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fare Discount"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="@dimen/_20sdp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tick the box below that applies to you as a commuter."
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:textAlignment="center"/>
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student / Senior / PWD"
+            android:textSize="18sp"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:buttonTint="@color/blue"
+            android:layout_marginStart="@dimen/_10sdp"/>
+
+        <CheckBox
+            android:id="@+id/fareDNone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:textSize="18sp"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:buttonTint="@color/blue"
+            android:layout_marginStart="@dimen/_10sdp"/>
+
+        <Button
+            android:id="@+id/submitFareBtn"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/button_5radius"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note: The above list is the only people who are applicable for discount."
+            android:textColor="@color/blue"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_medium_italic"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

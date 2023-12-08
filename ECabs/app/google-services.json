@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1083604483773",
+    "project_id": "i-komyut",
+    "storage_bucket": "i-komyut.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1083604483773:android:eec338369319e58d3741d4",
+        "android_client_info": {
+          "package_name": "com.example.ecabs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9VOGMqg4EVY2eK3Aw4-ZGjfAh8qhlKnM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

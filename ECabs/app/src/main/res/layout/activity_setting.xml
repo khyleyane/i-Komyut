@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SettingActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_170sdp"
+            android:layout_marginTop="@dimen/_minus1sdp"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_minus1sdp"
+            android:background="@drawable/i_komyut_bg"
+            >
+            <ImageView
+                android:id="@+id/eastBack"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/ic_east_arrow"
+                android:rotation="180"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:clickable="true"/>
+            <ImageView
+                android:id="@+id/topLogo"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:background="@drawable/logo_text"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/notLogInContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Account"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log in to save your routes and details."
+                    android:layout_marginTop="@dimen/_minus5sdp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="14sp"
+                    />
+                <Button
+                    android:id="@+id/loginButton1"
+                    android:layout_width="@dimen/_230sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/fragment_setting_button"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Log In"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_20sdp">
+                    <TextView
+                        android:id="@+id/text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Don't have an account? "
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="14sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/signupRedirectText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sign Up"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/onceLoginContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+                <ImageView
+                    android:id="@+id/settingProfilePic"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Hello, User!"
+                        android:textSize="25sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:shadowColor="@color/black"
+                        android:shadowDx="1"
+                        android:shadowDy="2"
+                        android:shadowRadius="1"/>
+
+                    <Button
+                        android:id="@+id/editProfile"
+                        android:layout_width="@dimen/_130sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@drawable/fragment_setting_button_box"
+                        android:text="Edit Profile"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:textSize="13sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <!--Start-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profile_bar"
+            android:layout_marginTop="@dimen/_minus20sdp"
+            android:layout_marginBottom="@dimen/_40sdp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/saveLocTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saved Location"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="18sp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_20sdp"/>
+            <LinearLayout
+                android:id="@+id/savedLocationBtn"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/fragment_setting_container"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_location"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_20sdp"/>
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Search history"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get Help"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="18sp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_20sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/fragment_setting_container"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/FAQs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_faqs"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_20sdp"/>
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FAQ"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:src="@drawable/fragment_transit_underline" />
+
+                <LinearLayout
+                    android:id="@+id/contactUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_contact_us"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_20sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contact Us"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suggestion and Feedbacks"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="18sp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_20sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/fragment_setting_container"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/emailUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_email"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_20sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Suggestion and Feedbacks"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:src="@drawable/fragment_transit_underline" />
+
+                <LinearLayout
+                    android:id="@+id/rateBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_rate"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_20sdp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rate Us"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms of Service"
+                android:textColor="@color/blue"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="18sp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_20sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/fragment_setting_container"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/TCBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_privacy"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_20sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terms and Conditions"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:src="@drawable/fragment_transit_underline" />
+
+                <LinearLayout
+                    android:id="@+id/PPBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_terms"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_20sdp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Privacy Policy"
+                        android:textColor="@color/blue"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!--end-->
+    </LinearLayout>
+
+</RelativeLayout>
